@@ -157,8 +157,8 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans     AS(N1)  AS(N2) AS(N3) AS(N4)    AS(N5)      AS(N6)        AS(N7)     AS(N8)      AS(N9)       AS(N0)     &trans
-&trans     &trans   &trans  &trans  &trans &trans    &trans  AS(LBRC)   AS(MINUS)      AS(EQUALS)       AS(RBRC)    AS(BSLH)
+&trans     AS(N1)   AS(N2)  AS(N3)  AS(N4) AS(N5)      AS(N6)        AS(N7)     AS(N8)      AS(N9)       AS(N0)     &trans
+&trans     &trans   &trans  &trans  &trans &trans      &trans        AS(LBKT)   AS(MINUS)   AS(EQUALS)   AS(RBKT)   AS(BSLH)
 &trans     &trans   &trans  &trans  &trans &trans        &kp N1     &kp N2     &kp N3       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
