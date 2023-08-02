@@ -103,14 +103,14 @@
         };
 
         as: auto_shift {
-                compatible = "zmk,behavior-hold-tap";
-                label = "AUTO_SHIFT";
-                #binding-cells = <2>;
-                tapping_term_ms = <150>;
-                quick_tap_ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -120,9 +120,9 @@
             label = "Base";
             bindings = <
 #ifdef QWERTY_BASE
- &kp TAB    &AS(Q)      &AS(W)      &AS(E)       &AS(R)          &AS(T)          &AS(Y)            &AS(U)         &AS(I)       &AS(O)      &AS(P)         &kp BKSP
- &gresc     &AS(A)      &AS(S)      &AS(D)       &AS(F)          &AS(G)          &AS(H)            &AS(J)         &AS(K)       &AS(L)      &AS(SEMI)      &AS(QUOT)
- &kp LSHFT  &AS(Z)      &AS(X)      &AS(C)       &AS(V)          &AS(B)          &AS(N)            &AS(M)         &AS(COMMA)   &AS(DOT)    &AS(FSLH)      &kp RET
+ &kp TAB    AS(Q)      AS(W)      AS(E)       AS(R)          AS(T)          AS(Y)            AS(U)         AS(I)       AS(O)      AS(P)         &kp BKSP
+ &gresc     AS(A)      AS(S)      AS(D)       AS(F)          AS(G)          AS(H)            AS(J)         AS(K)       AS(L)      AS(SEMI)      AS(QUOT)
+ &kp LSHFT  AS(Z)      AS(X)      AS(C)       AS(V)          AS(B)          AS(N)            AS(M)         AS(COMMA)   AS(DOT)    AS(FSLH)      &kp RET
 #else
   &kp Q      &kp W      &kp F       &kp P          &kp B   &none &none  &kp J            &kp L          &kp U       &kp Y      &kp QUOT
   &kp A      &kp R      &kp S       &kp T          &kp G   &none &none  &kp M            &kp N          &kp E       &kp I      &kp O
@@ -157,8 +157,8 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans     &AS(N1)  &AS(N2) &AS(N3) &AS(N4)    &AS(N5)      &AS(N6)        &AS(N7)     &AS(N8)      &AS(N9)       &AS(N0)     &trans
-&trans     &trans   &trans  &trans  &trans     &kp EQUAL    &kp C_NEXT y  &AS(LBRC)   &AS(-)      &AS(=)       &AS(RBRC)    &AS(BKSLH)
+&trans     AS(N1)  AS(N2) AS(N3) AS(N4)    AS(N5)      AS(N6)        AS(N7)     AS(N8)      AS(N9)       AS(N0)     &trans
+&trans     &trans   &trans  &trans  &trans     &kp EQUAL    &kp C_NEXT y  AS(LBRC)   AS(-)      AS(=)       AS(RBRC)    AS(BKSLH)
 &trans     &trans  &trans &trans &trans    &kp BSLH    &trans        &kp N1     &kp N2     &kp N3       &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
