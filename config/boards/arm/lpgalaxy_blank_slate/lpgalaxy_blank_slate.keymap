@@ -27,6 +27,10 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&caps_word {
+        continue-list = <UNDERSCORE MINUS BACKSPACE>;
+    };
+
 / {
     chosen {
        zmk,matrix_transform =
@@ -37,10 +41,6 @@
 #else
                        &ortho_transform;
 #endif
-    };
-
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS BACKSPACE>;
     };
 
     macros {
