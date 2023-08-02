@@ -81,7 +81,7 @@
 #ifdef TBLE_DUAL_2U
 &trans         &trans &trans    &mo NAV_L      &shifty      &kp SPACE        &mo NUM_L     &trans &trans &trans
 #elif defined(TBLE_MIT)
-&trans &kp LCTRL &kp LALT  &kp LGUI    &lt SYM_L SPACE  &lt NAV_L BACKSPACE   &lt NUM_L SPACE  &kp LARW       &kp DARW    &kp UARW   &kp RARW
+&trans &kp LCTRL &kp LALT  &kp LGUI    &lt SYM_L SPACE  &lt NAV_L BACKSPACE   &lt NUM_L SPACE  &kp LEFT_ARROW       &kp DOWN_ARROW    &kp UP_ARROW   &kp RIGHT_ARROW
 #else
  &trans &trans         &kp LCTRL  &kp LALT    &mo NAV_L      &shifty      &kp SPACE        &mo NUM_L      &kp RALT    &kp RCTRL          &trans &trans
 #endif
