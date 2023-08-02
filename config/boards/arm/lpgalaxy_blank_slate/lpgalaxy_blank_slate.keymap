@@ -11,8 +11,8 @@
 
 #define QWERTY_BASE 1
 
-#define TBLE_ORTHO   1
-// #define TBLE_MIT     1
+// #define TBLE_ORTHO   1
+#define TBLE_MIT     1
 // #define TBLE_DUAL_2U 1
 
 #define NAV_L 1
@@ -81,7 +81,7 @@
 #ifdef TBLE_DUAL_2U
 &trans         &trans &trans    &mo NAV_L      &shifty      &kp SPACE        &mo NUM_L     &trans &trans &trans
 #elif defined(TBLE_MIT)
- &trans &trans         &kp LCTRL  &kp LGUI    &kp LALT          &lt NAV_L SPACE                   &mo NUM_L       &kp RALT &kp RCTRL        &trans &trans
+ &trans &trans         &kp LCTRL  &kp LGUI    &lt SYM_L SPACE  &lt NAV_L SPACE   &lt NUM_L SPACE       &kp LARW       &kp DARW    &kp UARW   &kp RARW
 #else
  &trans &trans         &kp LCTRL  &kp LALT    &mo NAV_L      &shifty      &kp SPACE        &mo NUM_L      &kp RALT    &kp RCTRL          &trans &trans
 #endif
